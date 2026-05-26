@@ -6,6 +6,15 @@ on:
     paths:
       - 'plugins/**'
       - 'tests/evals/**'
+  push:
+    branches: [main]
+    paths:
+      - 'plugins/**'
+      - 'tests/evals/**'
+
+concurrency:
+  group: evals-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   evals:
@@ -19,7 +28,7 @@ jobs:
         run: pip install -e scripts/agent_forge
       - name: Install test harness
         run: pip install -e tests
-      - name: Run Layer B evals (skipped until Phase 4)
+      - name: Run Layer B evals
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: |
@@ -27,4 +36,10 @@ jobs:
             echo "ANTHROPIC_API_KEY not set (likely a fork PR) — skipping evals"
             exit 0
           fi
-          pytest tests/evals -v -m "not slow"
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "PR run — smoke subset (one case per skill, ~46 tests)"
+            pytest tests/evals -v -m "smoke and not slow"
+          else
+            echo "Main push — full eval suite (230 tests)"
+            pytest tests/evals -v -m "not slow"
+          fi
