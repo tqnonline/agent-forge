@@ -37,9 +37,9 @@ jobs:
             exit 0
           fi
           if [ "${{ github.event_name }}" = "pull_request" ]; then
-            echo "PR run — smoke subset (one case per skill, ~46 tests, -n auto)"
-            pytest tests/evals -v -n auto -m "smoke and not slow"
+            echo "PR run — smoke subset (one case per skill, ~46 tests, -n 2)"
+            pytest tests/evals -v -n 2 -m "smoke and not slow"
           else
-            echo "Main push — full eval suite (230 tests, -n auto)"
-            pytest tests/evals -v -n auto -m "not slow"
+            echo "Main push — full eval suite (230 tests, -n 2)"
+            pytest tests/evals -v -n 2 -m "not slow"
           fi
