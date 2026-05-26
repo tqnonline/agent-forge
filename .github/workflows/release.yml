@@ -22,16 +22,32 @@ jobs:
         run: cp README.md scripts/agent_forge/README.md
       - name: Build distribution
         run: python -m build scripts/agent_forge
-      - name: Publish to PyPI (trusted publisher)
+      - name: Publish to PyPI via OIDC + twine (inline, no third-party action)
         continue-on-error: true
-        uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          packages-dir: scripts/agent_forge/dist/
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          body_path: docs/releases/v1.0.2.md
-          generate_release_notes: true
-          files: |
-            scripts/agent_forge/dist/*.whl
+        run: |
+          set -euo pipefail
+          oidc_token=$(curl -sLS \
+            -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=pypi" | python3 -c "import sys,json;print(json.load(sys.stdin)['value'])")
+          pypi_token=$(curl -sLS -X POST \
+            -H "Content-Type: application/json" \
+            -d "{\"token\": \"$oidc_token\"}" \
+            https://pypi.org/_/oidc/mint-token | python3 -c "import sys,json;print(json.load(sys.stdin)['token'])")
+          TWINE_USERNAME=__token__ TWINE_PASSWORD="$pypi_token" \
+            twine upload --skip-existing scripts/agent_forge/dist/*
+      - name: Create GitHub Release via gh CLI (inline)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG_NAME: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          notes_file="docs/releases/${TAG_NAME}.md"
+          if [ ! -f "$notes_file" ]; then
+            echo "No release notes file for $TAG_NAME at $notes_file" >&2
+            notes_file="/dev/null"
+          fi
+          gh release create "$TAG_NAME" \
+            --notes-file "$notes_file" \
+            --generate-notes \
+            scripts/agent_forge/dist/*.whl \
             scripts/agent_forge/dist/*.tar.gz
