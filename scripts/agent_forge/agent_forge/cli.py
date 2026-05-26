@@ -25,7 +25,7 @@ def _maybe_nudge(m) -> None:
 
 
 @click.group()
-@click.version_option()
+@click.version_option(package_name="tqn-agent-forge")
 def main() -> None:
     """agent-forge — install agent skills and plugins across CLIs."""
 
