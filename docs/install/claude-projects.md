@@ -22,7 +22,7 @@ is invoked. This works for any skill in any plugin.
 ### Step 1: Generate a loader
 
 ```bash
-pipx install agent-forge
+pipx install tqn-agent-forge
 
 # Generate a loader for a single skill
 agent-forge install writing/humanize --tier prompt-loader > humanize-loader.md

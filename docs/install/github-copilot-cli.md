@@ -8,7 +8,7 @@
 
 - GitHub Copilot CLI installed (`npm install -g @githubnext/github-copilot-cli`)
 - GitHub account with active Copilot subscription
-- Optional: `agent-forge` Python CLI (`pipx install agent-forge`) for unified update tracking
+- Optional: `agent-forge` Python CLI (`pipx install tqn-agent-forge`) for unified update tracking
 
 ## Quick install
 
@@ -28,7 +28,7 @@ copilot plugin install pm
 ### Option B: Via the agent-forge CLI
 
 ```bash
-pipx install agent-forge
+pipx install tqn-agent-forge
 agent-forge install writing --tier github-copilot-cli
 ```
 

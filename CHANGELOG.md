@@ -36,7 +36,7 @@ First stable release. See [release notes](docs/releases/v1.0.0.md).
   copy-to-home adapters (Kilo Code, OpenCode, Crush); 3 Tier 3 prompt loaders
   (Perplexity, ChatGPT GPTs, Claude.ai Projects).
 - **4 plugins / 46 skills:** `writing`, `prompts`, `msft-arch`, `pm`.
-- **`agent-forge` Python CLI** (`pipx install agent-forge`) — `install`,
+- **`agent-forge` Python CLI** (`pipx install tqn-agent-forge`) — `install`,
   `update`, `pin`, `remove`, `doctor`, plus 6 more commands across every
   supported tool.
 - **974 unit tests** (Layer A — structural, no LLM calls).

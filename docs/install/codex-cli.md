@@ -8,7 +8,7 @@
 
 - Codex CLI installed (`npm install -g @openai/codex`)
 - OpenAI API key set (`export OPENAI_API_KEY=sk-...`)
-- Optional: `agent-forge` Python CLI (`pipx install agent-forge`) for unified update tracking
+- Optional: `agent-forge` Python CLI (`pipx install tqn-agent-forge`) for unified update tracking
 
 ## Quick install
 
@@ -28,7 +28,7 @@ codex plugin install pm
 ### Option B: Via the agent-forge CLI
 
 ```bash
-pipx install agent-forge
+pipx install tqn-agent-forge
 agent-forge install writing --tier codex-cli
 ```
 

@@ -8,7 +8,7 @@
 
 - Gemini CLI installed (`npm install -g @google/gemini-cli`)
 - Google account authenticated (`gemini auth login`)
-- Optional: `agent-forge` Python CLI (`pipx install agent-forge`) for unified update tracking
+- Optional: `agent-forge` Python CLI (`pipx install tqn-agent-forge`) for unified update tracking
 
 ## Quick install
 
@@ -25,7 +25,7 @@ gemini skills install github:tqnonline/agent-forge#plugins/writing
 ### Option B: Via the agent-forge CLI
 
 ```bash
-pipx install agent-forge
+pipx install tqn-agent-forge
 agent-forge install writing --tier gemini-cli
 ```
 

@@ -15,7 +15,7 @@
 ### Via the agent-forge CLI (only method for Kilo Code)
 
 ```bash
-pipx install agent-forge
+pipx install tqn-agent-forge
 
 # Install individual plugins
 agent-forge install writing --tier kilocode
@@ -68,7 +68,7 @@ agent-forge remove writing@kilocode
 2. Confirm `~/.claude/skills/writing/` exists and contains `humanize/SKILL.md`
 
 **install command not found:**
-1. Run `pipx install agent-forge` and verify `~/.local/bin` is on your PATH
+1. Run `pipx install tqn-agent-forge` and verify `~/.local/bin` is on your PATH
 2. Try `python -m agent_forge install writing --tier kilocode`
 
 **See also:** [Contributing](../contributing/adding-a-plugin.md)
