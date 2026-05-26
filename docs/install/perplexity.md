@@ -22,7 +22,7 @@ without a native install.
 ### Step 1: Generate a loader for the skill(s) you want
 
 ```bash
-pipx install tqn-agent-forge
+pipx install tqn-agent-forge   # or: uv tool install tqn-agent-forge
 
 # Generate a loader for a single skill
 agent-forge install writing/humanize --tier prompt-loader > humanize-loader.md

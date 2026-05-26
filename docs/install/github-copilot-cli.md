@@ -28,7 +28,7 @@ copilot plugin install pm
 ### Option B: Via the agent-forge CLI
 
 ```bash
-pipx install tqn-agent-forge
+pipx install tqn-agent-forge   # or: uv tool install tqn-agent-forge
 agent-forge install writing --tier github-copilot-cli
 ```
 

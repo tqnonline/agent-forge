@@ -20,7 +20,7 @@
 ### Option B: Via the agent-forge CLI
 
 ```bash
-pipx install tqn-agent-forge
+pipx install tqn-agent-forge   # or: uv tool install tqn-agent-forge
 agent-forge install <plugin> --tier <tool-name>
 ```
 
