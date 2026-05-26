@@ -16,6 +16,7 @@ INSTALL_TARGETS = [
     ("GitHub Copilot CLI", "github-copilot-cli", "1a"),
     ("Codex CLI", "codex-cli", "1a"),
     ("Cursor", "cursor", "1a"),
+    ("Factory.ai Droid", "factory-droid", "1a"),
     ("Amp", "amp", "1b"),
     ("Gemini CLI", "gemini-cli", "1b"),
     ("Kilo Code", "kilocode", "2"),
@@ -33,7 +34,7 @@ def build() -> str:
     out = ["# agent-forge install catalog\n\n"]
     out.append("> Paste this URL into any LLM agent to install:\n")
     out.append("> `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/<tool>.md`\n\n")
-    out.append("## Install targets (12 at v1.0)\n\n")
+    out.append(f"## Install targets ({len(INSTALL_TARGETS)})\n\n")
     out.append("| Tool | Tier | Install guide |\n")
     out.append("|---|---|---|\n")
     for name, slug, tier in INSTALL_TARGETS:

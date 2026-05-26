@@ -21,6 +21,10 @@ from agent_forge.translators.cursor import (
     build_cursor_marketplace_json,
     build_cursor_plugin_json,
 )
+from agent_forge.translators.factory_droid import (
+    build_droid_marketplace_json,
+    build_droid_plugin_json,
+)
 
 REPO = Path(__file__).resolve().parent.parent
 
@@ -130,6 +134,32 @@ def regenerate_cursor(check: bool) -> bool:
     return drifted
 
 
+def regenerate_droid(check: bool) -> bool:
+    canonical = json.loads((REPO / ".claude-plugin/marketplace.json").read_text())
+    plugins = discover_plugins(REPO / "plugins")
+    out_marketplace = REPO / ".factory-plugin/marketplace.json"
+    out_marketplace.parent.mkdir(parents=True, exist_ok=True)
+    new_content = json.dumps(build_droid_marketplace_json(canonical, plugins), indent=2) + "\n"
+    drifted = False
+    if check and out_marketplace.exists():
+        if out_marketplace.read_text() != new_content:
+            print(f"DRIFT: {out_marketplace}")
+            drifted = True
+    else:
+        out_marketplace.write_text(new_content)
+    for plugin in plugins:
+        plugin_json = plugin.plugin_dir / ".factory-plugin/plugin.json"
+        plugin_json.parent.mkdir(parents=True, exist_ok=True)
+        new_pj = json.dumps(build_droid_plugin_json(plugin), indent=2) + "\n"
+        if check and plugin_json.exists():
+            if plugin_json.read_text() != new_pj:
+                print(f"DRIFT: {plugin_json}")
+                drifted = True
+        else:
+            plugin_json.write_text(new_pj)
+    return drifted
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true",
@@ -139,6 +169,7 @@ def main() -> None:
     drifted = regenerate_copilot(args.check) or drifted
     drifted = regenerate_codex(args.check) or drifted
     drifted = regenerate_cursor(args.check) or drifted
+    drifted = regenerate_droid(args.check) or drifted
     if args.check and drifted:
         raise SystemExit(1)
 

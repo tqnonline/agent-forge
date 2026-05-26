@@ -1,11 +1,11 @@
 {
   "name": "agent-forge",
-  "description": "A curated cross-CLI marketplace of agent skills, plugins, agents, and slash commands \u2014 works natively with Claude Code, GitHub Copilot CLI, OpenAI Codex CLI, Cursor, Sourcegraph Amp, Gemini CLI; with adapters for Kilo Code, OpenCode, Crush; and a portable loader for Perplexity, ChatGPT, Claude.ai Projects.",
+  "description": "A curated cross-CLI marketplace of agent skills, plugins, agents, and slash commands \u2014 works natively with Claude Code, GitHub Copilot CLI, OpenAI Codex CLI, Cursor, Factory.ai Droid, Sourcegraph Amp, Gemini CLI; with adapters for Kilo Code, OpenCode, Crush; and a portable loader for Perplexity, ChatGPT, Claude.ai Projects.",
   "version": "1.0.0",
   "owner": {
     "name": "Rahul N Akmol",
     "email": "rahulnakmol@gmail.com",
-    "url": "https://github.com/rahulnakmol"
+    "url": "https://github.com/tqnonline"
   },
   "plugins": [
     {

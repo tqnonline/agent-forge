@@ -1,38 +1,35 @@
 {
   "name": "agent-forge",
+  "description": "A curated cross-CLI marketplace of agent skills, plugins, agents, and slash commands \u2014 works natively with Claude Code, GitHub Copilot CLI, OpenAI Codex CLI, Cursor, Factory.ai Droid, Sourcegraph Amp, Gemini CLI; with adapters for Kilo Code, OpenCode, Crush; and a portable loader for Perplexity, ChatGPT, Claude.ai Projects.",
   "owner": {
     "name": "Rahul N Akmol",
     "email": "rahulnakmol@gmail.com",
     "url": "https://github.com/tqnonline"
   },
-  "metadata": {
-    "description": "A curated cross-CLI marketplace of agent skills, plugins, agents, and slash commands \u2014 works natively with Claude Code, GitHub Copilot CLI, OpenAI Codex CLI, Cursor, Factory.ai Droid, Sourcegraph Amp, Gemini CLI; with adapters for Kilo Code, OpenCode, Crush; and a portable loader for Perplexity, ChatGPT, Claude.ai Projects.",
-    "version": "1.0.0"
-  },
   "plugins": [
     {
       "name": "msft-arch",
       "description": "Microsoft enterprise architecture suite: 32 specialist skills across 5 tiers (process, verticals, horizontals, long-tail specialists, output, cross-cutting). FINAL v5 expansion complete. Vertical specialists (Azure, Power Platform, D365, Containers, Data, AI) build solutions; horizontal architects (Identity, Security, IaC, .NET, FinOps, Observability, CI/CD, Threat Model) review them in parallel; long-tail specialists (MAUI, SRE, .NET Modernization, Defender+Sentinel) cover Phase 4 domains. Always-on horizontals run after every vertical; trigger-based and stack-pinned routing fire on signal match. Odin resolves cross-horizontal conflicts. Validate runs Council of Three on every output package.",
-      "version": "5.3.0",
-      "source": "./plugins/msft-arch"
+      "source": "./plugins/msft-arch",
+      "category": "engineering"
     },
     {
       "name": "pm",
       "description": "Product and Program Management skill suite for technology industries. 12 composable skills following UNIX philosophy: philosophy, discover, map, tom-architect, epic-decompose, prd-draft, prd-validate, prd-review, backlog-decompose, backlog-ado, backlog-linear, backlog-github. Includes Product Constitution (living strategy doc), multi-platform TOM design, and 11-Star PRD quality framework. Works for SaaS product companies and consulting delivery firms.",
-      "version": "2.2.0",
-      "source": "./plugins/pm"
+      "source": "./plugins/pm",
+      "category": "productivity"
     },
     {
       "name": "prompts",
       "description": "Intelligent prompt engineering suite with signal-based technique selection (10 techniques across 3 tiers), automatic hardening patterns (10 composable patterns), UNIX-philosophy orchestrator agent, and voice calibration. Transforms raw intent into production-grade AI prompts.",
-      "version": "2.0.0",
-      "source": "./plugins/prompts"
+      "source": "./plugins/prompts",
+      "category": "productivity"
     },
     {
       "name": "writing",
       "description": "Collection of writing transformation and text processing skills including humanization, voice calibration, and AI pattern detection",
-      "version": "1.0.0",
-      "source": "./plugins/writing"
+      "source": "./plugins/writing",
+      "category": "productivity"
     }
   ]
 }

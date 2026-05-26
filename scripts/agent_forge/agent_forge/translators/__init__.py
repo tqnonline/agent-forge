@@ -29,6 +29,7 @@ from agent_forge.translators import (  # noqa: E402,F401
     copilot_cli,
     codex_cli,
     cursor,
+    factory_droid,
     amp,
     gemini_cli,
     kilocode,

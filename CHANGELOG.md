@@ -8,6 +8,14 @@ Per-release detail lives under [`docs/releases/`](docs/releases/).
 
 ## [Unreleased]
 
+### Added
+- **Factory.ai Droid support** (Tier 1a — native marketplace registry). Covers
+  both the droid CLI and the Factory desktop app, which share `~/.factory/`
+  configuration. New translator emits `.factory-plugin/marketplace.json` at
+  repo root and per-plugin `.factory-plugin/plugin.json` files. Install via:
+  `droid plugin marketplace add https://github.com/tqnonline/agent-forge`. New
+  install guide at `docs/install/factory-droid.md`. Total install targets: 13.
+
 ## [1.0.2] — 2026-05-26
 
 Bug-fix patch for v1.0.1. See [release notes](docs/releases/v1.0.2.md).

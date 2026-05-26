@@ -1,0 +1,9 @@
+{
+  "name": "msft-arch",
+  "description": "Microsoft enterprise architecture suite: 32 specialist skills across 5 tiers (process, verticals, horizontals, long-tail specialists, output, cross-cutting). FINAL v5 expansion complete. Vertical specialists (Azure, Power Platform, D365, Containers, Data, AI) build solutions; horizontal architects (Identity, Security, IaC, .NET, FinOps, Observability, CI/CD, Threat Model) review them in parallel; long-tail specialists (MAUI, SRE, .NET Modernization, Defender+Sentinel) cover Phase 4 domains. Always-on horizontals run after every vertical; trigger-based and stack-pinned routing fire on signal match. Odin resolves cross-horizontal conflicts. Validate runs Council of Three on every output package.",
+  "version": "5.3.0",
+  "author": {
+    "name": "Rahul Narasimha Akmol",
+    "email": "rahulnakmol@gmail.com"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "writing",
+  "description": "Collection of writing transformation and text processing skills including humanization, voice calibration, and AI pattern detection",
+  "version": "1.0.0",
+  "author": {
+    "name": "Rahul Narasimha Akmol",
+    "email": "rahulnakmol@gmail.com"
+  }
+}

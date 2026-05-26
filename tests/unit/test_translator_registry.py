@@ -6,10 +6,10 @@ from agent_forge.translators import get_translator, registered_translators
 def test_registry_lists_all_v1_targets() -> None:
     names = registered_translators()
     assert set(names) == {
-        "claude-code", "copilot-cli", "codex-cli", "cursor",  # Tier 1a
-        "amp", "gemini-cli",                                    # Tier 1b
-        "kilocode", "opencode", "crush",                        # Tier 2
-        "prompt-loader",                                        # Tier 3
+        "claude-code", "copilot-cli", "codex-cli", "cursor", "factory-droid",  # Tier 1a
+        "amp", "gemini-cli",                                                     # Tier 1b
+        "kilocode", "opencode", "crush",                                         # Tier 2
+        "prompt-loader",                                                         # Tier 3
     }
 
 

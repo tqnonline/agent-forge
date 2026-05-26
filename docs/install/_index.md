@@ -3,7 +3,7 @@
 > Paste this URL into any LLM agent to install:
 > `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/<tool>.md`
 
-## Install targets (12 at v1.0)
+## Install targets (13)
 
 | Tool | Tier | Install guide |
 |---|---|---|
@@ -11,6 +11,7 @@
 | GitHub Copilot CLI | 1a | [github-copilot-cli.md](./github-copilot-cli.md) |
 | Codex CLI | 1a | [codex-cli.md](./codex-cli.md) |
 | Cursor | 1a | [cursor.md](./cursor.md) |
+| Factory.ai Droid | 1a | [factory-droid.md](./factory-droid.md) |
 | Amp | 1b | [amp.md](./amp.md) |
 | Gemini CLI | 1b | [gemini-cli.md](./gemini-cli.md) |
 | Kilo Code | 2 | [kilocode.md](./kilocode.md) |

@@ -6,12 +6,12 @@
 [![Tests](https://img.shields.io/github/actions/workflow/status/tqnonline/agent-forge/ci-structural.yml?label=tests&style=flat-square)](https://github.com/tqnonline/agent-forge/actions/workflows/ci-structural.yml)
 
 A curated, BSD-3-Clause marketplace of agent skills, plugins, and slash commands.
-Works natively with Claude Code, GitHub Copilot CLI, OpenAI Codex CLI, and Cursor.
-Git-URL install for Amp and Gemini CLI. Copy-to-home adapters for Kilo Code,
-OpenCode, and Crush. Portable prompt loaders for Perplexity, ChatGPT GPTs,
-and Claude.ai Projects.
+Works natively with Claude Code, GitHub Copilot CLI, OpenAI Codex CLI, Cursor,
+and Factory.ai Droid (CLI + desktop app). Git-URL install for Amp and Gemini
+CLI. Copy-to-home adapters for Kilo Code, OpenCode, and Crush. Portable prompt
+loaders for Perplexity, ChatGPT GPTs, and Claude.ai Projects.
 
-**12 install targets. 4 plugins. 46 skills. One canonical source.**
+**13 install targets. 4 plugins. 46 skills. One canonical source.**
 
 ## 30-second install
 
@@ -32,6 +32,12 @@ codex plugin marketplace add tqnonline/agent-forge
 ```
 
 **Cursor:** Open `cursor.com/marketplace`, search "agent-forge", click Install.
+
+**Factory.ai Droid (CLI + desktop):**
+```bash
+droid plugin marketplace add https://github.com/tqnonline/agent-forge
+droid plugin install writing@agent-forge
+```
 
 **Amp:**
 ```bash
