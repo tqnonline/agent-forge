@@ -24,7 +24,7 @@ jobs:
         run: python -m build scripts/agent_forge
       - name: Publish to PyPI (trusted publisher)
         continue-on-error: true
-        uses: pypa/gh-action-pypi-publish@release/v1
+        uses: pypa/gh-action-pypi-publish@v1.13.0
         with:
           packages-dir: scripts/agent_forge/dist/
       - name: Create GitHub Release
