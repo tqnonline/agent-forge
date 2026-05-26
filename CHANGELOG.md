@@ -8,6 +8,10 @@ Per-release detail lives under [`docs/releases/`](docs/releases/).
 
 ## [Unreleased]
 
+## [1.1.0] — 2026-05-26
+
+Minor release. See [release notes](docs/releases/v1.1.0.md).
+
 ### Added
 - **Factory.ai Droid support** (Tier 1a — native marketplace registry). Covers
   both the droid CLI and the Factory desktop app, which share `~/.factory/`
@@ -75,7 +79,8 @@ First stable release. See [release notes](docs/releases/v1.0.0.md).
 
 Breaking changes to any of the above require a v2.0.0 major-version bump.
 
-[Unreleased]: https://github.com/tqnonline/agent-forge/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/tqnonline/agent-forge/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/tqnonline/agent-forge/compare/v1.0.2...v1.1.0
 [1.0.2]: https://github.com/tqnonline/agent-forge/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/tqnonline/agent-forge/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/tqnonline/agent-forge/releases/tag/v1.0.0

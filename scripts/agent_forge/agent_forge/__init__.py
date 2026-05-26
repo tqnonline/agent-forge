@@ -1,3 +1,3 @@
 """agent-forge — cross-CLI plugin marketplace installer."""
 
-__version__ = "1.1.0-dev"
+__version__ = "1.1.0"
