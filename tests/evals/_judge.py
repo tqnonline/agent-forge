@@ -1,4 +1,14 @@
-"""Shared LLM judge for Layer B evals — uses Claude Haiku 4.5 by default."""
+"""Shared LLM judge for Layer B evals — uses Claude Sonnet 4.6 by default.
+
+The judge is intentionally one tier above the invoked model (Haiku 4.5). Same-
+model self-judging has documented bias (judge favors its own family's
+patterns), and a judge can only catch errors at or below its own capability
+ceiling. Override via `EVAL_JUDGE_MODEL` env var.
+
+`temperature=0` is set on the judge call so the same (output, rubric) pair
+scores identically across runs — required for the regression check to mean
+anything.
+"""
 
 import json
 import os
@@ -6,7 +16,7 @@ from pathlib import Path
 
 import anthropic
 
-JUDGE_MODEL = os.environ.get("EVAL_JUDGE_MODEL", "claude-haiku-4-5-20251001")
+JUDGE_MODEL = os.environ.get("EVAL_JUDGE_MODEL", "claude-sonnet-4-6")
 BASELINE_FILE = Path(__file__).parent / "_baseline_scores.json"
 
 JUDGE_PROMPT = """You are an expert evaluator. Score the following output against the rubric.
@@ -41,6 +51,7 @@ def score_against_rubric(
     message = client.messages.create(
         model=model,
         max_tokens=400,
+        temperature=0,
         messages=[{
             "role": "user",
             "content": JUDGE_PROMPT.format(
