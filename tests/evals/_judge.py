@@ -47,7 +47,7 @@ def score_against_rubric(
     case: dict,
     model: str = JUDGE_MODEL,
 ) -> float:
-    client = anthropic.Anthropic()
+    client = anthropic.Anthropic(max_retries=5)
     message = client.messages.create(
         model=model,
         max_tokens=400,
