@@ -7,7 +7,7 @@
 ## Prerequisites
 
 - Claude Code installed (`npm install -g @anthropic-ai/claude-code`)
-- Optional: `agent-forge` Python CLI (`pipx install agent-forge`) for unified update tracking
+- Optional: `agent-forge` Python CLI (`pipx install tqn-agent-forge`) for unified update tracking
 
 ## Quick install
 
@@ -27,7 +27,7 @@ claude plugin install pm
 ### Option B: Via the agent-forge CLI
 
 ```bash
-pipx install agent-forge
+pipx install tqn-agent-forge
 agent-forge install writing --tier claude-code
 ```
 

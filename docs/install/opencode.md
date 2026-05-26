@@ -15,7 +15,7 @@
 ### Via the agent-forge CLI (only method for OpenCode)
 
 ```bash
-pipx install agent-forge
+pipx install tqn-agent-forge
 
 # Install individual plugins
 agent-forge install writing --tier opencode

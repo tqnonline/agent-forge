@@ -1,7 +1,7 @@
 # agent-forge
 
 [![GitHub Release](https://img.shields.io/github/v/release/tqnonline/agent-forge?style=flat-square)](https://github.com/tqnonline/agent-forge/releases/latest)
-[![PyPI](https://img.shields.io/pypi/v/agent-forge?style=flat-square)](https://pypi.org/project/agent-forge/)
+[![PyPI](https://img.shields.io/pypi/v/tqn-agent-forge?style=flat-square)](https://pypi.org/project/tqn-agent-forge/)
 [![License](https://img.shields.io/github/license/tqnonline/agent-forge?style=flat-square)](LICENSE)
 [![Tests](https://img.shields.io/github/actions/workflow/status/tqnonline/agent-forge/ci-structural.yml?label=tests&style=flat-square)](https://github.com/tqnonline/agent-forge/actions/workflows/ci-structural.yml)
 
@@ -45,7 +45,7 @@ gemini skills install github:tqnonline/agent-forge
 
 **Kilo Code, OpenCode, or Crush:**
 ```bash
-pipx install agent-forge
+pipx install tqn-agent-forge
 agent-forge install writing --tier kilocode   # or opencode, or crush
 ```
 

@@ -1,5 +1,5 @@
 [project]
-name = "agent-forge"
+name = "tqn-agent-forge"
 version = "1.0.1"
 description = "Cross-CLI plugin marketplace installer for agent-forge"
 authors = [{ name = "Rahul N Akmol", email = "rahulnakmol@gmail.com" }]

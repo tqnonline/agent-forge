@@ -40,7 +40,7 @@ gemini skills install github:tqnonline/agent-forge
 
 **Kilo Code, OpenCode, or Crush:**
 ```bash
-pipx install agent-forge
+pipx install tqn-agent-forge
 agent-forge install writing --tier kilocode   # or opencode, or crush
 ```
 

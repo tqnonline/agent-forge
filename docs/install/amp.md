@@ -7,7 +7,7 @@
 ## Prerequisites
 
 - Amp installed (Sourcegraph Amp CLI — `npm install -g @sourcegraph/amp`)
-- Optional: `agent-forge` Python CLI (`pipx install agent-forge`) for unified update tracking
+- Optional: `agent-forge` Python CLI (`pipx install tqn-agent-forge`) for unified update tracking
 
 ## Quick install
 
@@ -24,7 +24,7 @@ amp skill add github:tqnonline/agent-forge#plugins/writing
 ### Option B: Via the agent-forge CLI
 
 ```bash
-pipx install agent-forge
+pipx install tqn-agent-forge
 agent-forge install writing --tier amp
 ```
 
