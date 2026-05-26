@@ -8,6 +8,15 @@ Per-release detail lives under [`docs/releases/`](docs/releases/).
 
 ## [Unreleased]
 
+## [1.0.2] — 2026-05-26
+
+Bug-fix patch for v1.0.1. See [release notes](docs/releases/v1.0.2.md).
+
+### Fixed
+- `agent-forge --version` crashed with `RuntimeError: 'agent_forge' is not
+  installed`. Click's `version_option` was looking up the package by the CLI
+  command name; now explicitly uses `package_name="tqn-agent-forge"`.
+
 ## [1.0.1] — 2026-05-26
 
 First release under the `tqnonline` GitHub organization.
@@ -58,6 +67,7 @@ First stable release. See [release notes](docs/releases/v1.0.0.md).
 
 Breaking changes to any of the above require a v2.0.0 major-version bump.
 
-[Unreleased]: https://github.com/tqnonline/agent-forge/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/tqnonline/agent-forge/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/tqnonline/agent-forge/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/tqnonline/agent-forge/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/tqnonline/agent-forge/releases/tag/v1.0.0
