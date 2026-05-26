@@ -54,7 +54,7 @@ class Manifest(BaseModel):
     schema_version: int = 1
     agent_forge_version: str = "1.0.0"
     last_check: datetime | None = None
-    remote: str = "https://github.com/rahulnakmol/agent-forge"
+    remote: str = "https://github.com/tqnonline/agent-forge"
     remote_branch: str = "main"
     installs: list[Install] = Field(default_factory=list)
     operation_log: list[OperationLogEntry] = Field(default_factory=list)

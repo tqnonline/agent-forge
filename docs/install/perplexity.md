@@ -2,7 +2,7 @@
 
 > **Agent-installable:** This guide is written so an LLM agent can read it and
 > execute the install commands directly. Paste this URL into your agent:
-> `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/docs/install/perplexity.md`
+> `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/perplexity.md`
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ apply it to your request.
 | Item | Where it lands | Notes |
 |---|---|---|
 | Loader prompt | Perplexity Space custom instructions | Fetches skill from GitHub on demand |
-| Skills | GitHub (fetched at runtime) | `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/` |
+| Skills | GitHub (fetched at runtime) | `https://raw.githubusercontent.com/tqnonline/agent-forge/main/` |
 
 ## Updating
 
@@ -76,7 +76,7 @@ Delete or edit the Space in Perplexity to remove the skill. No files to clean up
 2. Try explicitly triggering: `activate humanize skill and rewrite this paragraph`
 
 **Fetch fails (network or 404):**
-1. Verify the skill exists: `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/plugins/writing/skills/humanize/SKILL.md`
+1. Verify the skill exists: `https://raw.githubusercontent.com/tqnonline/agent-forge/main/plugins/writing/skills/humanize/SKILL.md`
 2. Regenerate the loader with `agent-forge install writing/humanize --tier prompt-loader`
 
 **See also:** [ChatGPT GPTs guide](./chatgpt-gpts.md), [Claude.ai Projects guide](./claude-projects.md), [Contributing](../contributing/adding-a-plugin.md)

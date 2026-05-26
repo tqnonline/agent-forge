@@ -2,7 +2,7 @@
 
 > **Agent-installable:** This guide is written so an LLM agent can read it and
 > execute the install commands directly. Paste this URL into your agent:
-> `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/docs/install/amp.md`
+> `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/amp.md`
 
 ## Prerequisites
 
@@ -15,10 +15,10 @@
 
 ```bash
 # Install the full agent-forge marketplace via git URL
-amp skill add github:rahulnakmol/agent-forge
+amp skill add github:tqnonline/agent-forge
 
 # Or install a specific plugin
-amp skill add github:rahulnakmol/agent-forge#plugins/writing
+amp skill add github:tqnonline/agent-forge#plugins/writing
 ```
 
 ### Option B: Via the agent-forge CLI
@@ -52,7 +52,7 @@ agent-forge update            # apply (re-clones from latest SHA)
 
 Native alternative:
 ```bash
-amp skill update github:rahulnakmol/agent-forge
+amp skill update github:tqnonline/agent-forge
 ```
 
 ## Removing

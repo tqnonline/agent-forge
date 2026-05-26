@@ -25,9 +25,9 @@ classifiers = [
 agent-forge = "agent_forge.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/rahulnakmol/agent-forge"
-Repository = "https://github.com/rahulnakmol/agent-forge"
-Issues = "https://github.com/rahulnakmol/agent-forge/issues"
+Homepage = "https://github.com/tqnonline/agent-forge"
+Repository = "https://github.com/tqnonline/agent-forge"
+Issues = "https://github.com/tqnonline/agent-forge/issues"
 
 [build-system]
 requires = ["hatchling"]

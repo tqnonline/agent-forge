@@ -1,9 +1,9 @@
 # agent-forge
 
-[![GitHub Release](https://img.shields.io/github/v/release/rahulnakmol/agent-forge?style=flat-square)](https://github.com/rahulnakmol/agent-forge/releases/latest)
+[![GitHub Release](https://img.shields.io/github/v/release/tqnonline/agent-forge?style=flat-square)](https://github.com/tqnonline/agent-forge/releases/latest)
 [![PyPI](https://img.shields.io/pypi/v/agent-forge?style=flat-square)](https://pypi.org/project/agent-forge/)
-[![License](https://img.shields.io/github/license/rahulnakmol/agent-forge?style=flat-square)](LICENSE)
-[![Tests](https://img.shields.io/github/actions/workflow/status/rahulnakmol/agent-forge/ci-structural.yml?label=tests&style=flat-square)](https://github.com/rahulnakmol/agent-forge/actions/workflows/ci-structural.yml)
+[![License](https://img.shields.io/github/license/tqnonline/agent-forge?style=flat-square)](LICENSE)
+[![Tests](https://img.shields.io/github/actions/workflow/status/tqnonline/agent-forge/ci-structural.yml?label=tests&style=flat-square)](https://github.com/tqnonline/agent-forge/actions/workflows/ci-structural.yml)
 
 A curated, BSD-3-Clause marketplace of agent skills, plugins, and slash commands.
 Works natively with Claude Code, GitHub Copilot CLI, OpenAI Codex CLI, and Cursor.
@@ -17,30 +17,30 @@ and Claude.ai Projects.
 
 **Claude Code:**
 ```bash
-claude plugin marketplace add github:rahulnakmol/agent-forge
+claude plugin marketplace add github:tqnonline/agent-forge
 claude plugin install writing
 ```
 
 **GitHub Copilot CLI:**
 ```bash
-copilot plugin marketplace add rahulnakmol/agent-forge
+copilot plugin marketplace add tqnonline/agent-forge
 ```
 
 **Codex CLI:**
 ```bash
-codex plugin marketplace add rahulnakmol/agent-forge
+codex plugin marketplace add tqnonline/agent-forge
 ```
 
 **Cursor:** Open `cursor.com/marketplace`, search "agent-forge", click Install.
 
 **Amp:**
 ```bash
-amp skill add github:rahulnakmol/agent-forge
+amp skill add github:tqnonline/agent-forge
 ```
 
 **Gemini CLI:**
 ```bash
-gemini skills install github:rahulnakmol/agent-forge
+gemini skills install github:tqnonline/agent-forge
 ```
 
 **Kilo Code, OpenCode, or Crush:**
@@ -65,7 +65,7 @@ agent-forge install writing --tier kilocode   # or opencode, or crush
 Paste this into any LLM agent:
 
 > Install agent-forge plugins from  
-> https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/docs/install/_index.md
+> https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/_index.md
 
 The agent fetches the catalog, identifies your tool, and runs the correct install commands.
 

@@ -133,7 +133,7 @@ def cmd_update(install_id: str | None, check: bool) -> None:
             continue
         try:
             upstream_shas[install.id] = resolve_plugin_sha(
-                "rahulnakmol/agent-forge", m.remote_branch,
+                "tqnonline/agent-forge", m.remote_branch,
                 f"plugins/{install.plugin}",
             )
         except Exception as e:

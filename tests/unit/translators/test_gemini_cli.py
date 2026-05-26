@@ -10,6 +10,6 @@ def test_gemini_translator_registered() -> None:
 
 def test_gemini_install_command() -> None:
     t = get_translator("gemini-cli")
-    cmd = t.install_command("rahulnakmol/agent-forge")
+    cmd = t.install_command("tqnonline/agent-forge")
     assert cmd.startswith("gemini skills install")
-    assert "rahulnakmol/agent-forge" in cmd
+    assert "tqnonline/agent-forge" in cmd

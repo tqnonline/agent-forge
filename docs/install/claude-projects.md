@@ -2,7 +2,7 @@
 
 > **Agent-installable:** This guide is written so an LLM agent can read it and
 > execute the install commands directly. Paste this URL into your agent:
-> `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/docs/install/claude-projects.md`
+> `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/claude-projects.md`
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ your request.
 | Item | Where it lands | Notes |
 |---|---|---|
 | Loader prompt | Project instructions | Fetches skill from GitHub on demand |
-| Skills | GitHub (fetched at runtime) | `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/` |
+| Skills | GitHub (fetched at runtime) | `https://raw.githubusercontent.com/tqnonline/agent-forge/main/` |
 
 ## Updating
 
@@ -79,11 +79,11 @@ Delete the project or clear the Project instructions field. No local files to re
 
 **GitHub fetch fails:**
 1. Claude.ai can browse URLs; if the fetch fails, paste the full skill content directly
-2. Verify the URL: `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/plugins/writing/skills/humanize/SKILL.md`
+2. Verify the URL: `https://raw.githubusercontent.com/tqnonline/agent-forge/main/plugins/writing/skills/humanize/SKILL.md`
 
 **Character limit reached:**
 1. Install one skill per project, or create multiple projects per skill
 2. Reference the skill URL rather than embedding the full content:
-   `When the user asks to humanize text, fetch and follow: https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/plugins/writing/skills/humanize/SKILL.md`
+   `When the user asks to humanize text, fetch and follow: https://raw.githubusercontent.com/tqnonline/agent-forge/main/plugins/writing/skills/humanize/SKILL.md`
 
 **See also:** [Perplexity guide](./perplexity.md), [ChatGPT GPTs guide](./chatgpt-gpts.md), [Contributing](../contributing/adding-a-plugin.md)

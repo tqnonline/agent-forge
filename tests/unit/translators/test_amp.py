@@ -12,9 +12,9 @@ def test_amp_translator_registered() -> None:
 
 def test_amp_install_command_string() -> None:
     t = get_translator("amp")
-    cmd = t.install_command("rahulnakmol/agent-forge")
+    cmd = t.install_command("tqnonline/agent-forge")
     assert cmd.startswith("amp skill add")
-    assert "rahulnakmol/agent-forge" in cmd
+    assert "tqnonline/agent-forge" in cmd
 
 
 def test_amp_translate_skill_is_noop(tmp_path: Path) -> None:

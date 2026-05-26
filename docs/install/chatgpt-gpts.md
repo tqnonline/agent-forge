@@ -2,7 +2,7 @@
 
 > **Agent-installable:** This guide is written so an LLM agent can read it and
 > execute the install commands directly. Paste this URL into your agent:
-> `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/docs/install/chatgpt-gpts.md`
+> `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/chatgpt-gpts.md`
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ The loader instructs the GPT to fetch the full skill definition from GitHub and 
 | Item | Where it lands | Notes |
 |---|---|---|
 | Loader prompt | GPT Instructions field | Fetches skill from GitHub on demand |
-| Skills | GitHub (fetched at runtime) | `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/` |
+| Skills | GitHub (fetched at runtime) | `https://raw.githubusercontent.com/tqnonline/agent-forge/main/` |
 
 ## Updating
 
@@ -74,7 +74,7 @@ Delete the custom GPT or replace the Instructions field content. No local files 
 3. Try a more explicit invocation: `follow the humanize skill instructions and rewrite this`
 
 **Skill fetch returns 404:**
-1. Verify the raw URL is reachable: `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/plugins/writing/skills/humanize/SKILL.md`
+1. Verify the raw URL is reachable: `https://raw.githubusercontent.com/tqnonline/agent-forge/main/plugins/writing/skills/humanize/SKILL.md`
 2. Regenerate the loader: `agent-forge install writing/humanize --tier prompt-loader`
 
 **See also:** [Perplexity guide](./perplexity.md), [Claude.ai Projects guide](./claude-projects.md), [Contributing](../contributing/adding-a-plugin.md)

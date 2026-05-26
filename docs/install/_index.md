@@ -1,7 +1,7 @@
 # agent-forge install catalog
 
 > Paste this URL into any LLM agent to install:
-> `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/docs/install/<tool>.md`
+> `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/<tool>.md`
 
 ## Install targets (12 at v1.0)
 

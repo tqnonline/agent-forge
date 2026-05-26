@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-Please report security vulnerabilities via [GitHub Security Advisories](https://github.com/rahulnakmol/agent-forge/security/advisories/new)
+Please report security vulnerabilities via [GitHub Security Advisories](https://github.com/tqnonline/agent-forge/security/advisories/new)
 or by emailing **rahulnakmol@gmail.com** with the subject line `SECURITY: agent-forge`.
 
 Do **not** open public issues for security reports.

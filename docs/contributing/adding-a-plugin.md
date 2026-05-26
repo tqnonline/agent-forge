@@ -9,7 +9,7 @@ steps 3–7. Steps 1–2 are only required for a brand-new plugin.
 ## Step 1: Fork and clone
 
 ```bash
-gh repo fork rahulnakmol/agent-forge --clone --remote
+gh repo fork tqnonline/agent-forge --clone --remote
 cd agent-forge
 git checkout -b plugin/<your-plugin-name>
 ```

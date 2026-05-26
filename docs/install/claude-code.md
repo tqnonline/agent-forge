@@ -2,7 +2,7 @@
 
 > **Agent-installable:** This guide is written so an LLM agent can read it and
 > execute the install commands directly. Paste this URL into your agent:
-> `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/docs/install/claude-code.md`
+> `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/claude-code.md`
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@
 
 ```bash
 # Register the agent-forge marketplace
-claude plugin marketplace add github:rahulnakmol/agent-forge
+claude plugin marketplace add github:tqnonline/agent-forge
 
 # Install individual plugins
 claude plugin install writing
@@ -70,7 +70,7 @@ claude plugin remove writing
 ## Troubleshooting
 
 **Plugin not appearing after install:**
-1. Run `claude plugin list` — if not listed, re-run `claude plugin marketplace add github:rahulnakmol/agent-forge`
+1. Run `claude plugin list` — if not listed, re-run `claude plugin marketplace add github:tqnonline/agent-forge`
 2. Restart Claude Code; skills load at session start from `~/.claude/skills/`
 
 **Skill not triggering:**

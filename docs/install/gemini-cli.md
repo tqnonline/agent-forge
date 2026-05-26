@@ -2,7 +2,7 @@
 
 > **Agent-installable:** This guide is written so an LLM agent can read it and
 > execute the install commands directly. Paste this URL into your agent:
-> `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/docs/install/gemini-cli.md`
+> `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/gemini-cli.md`
 
 ## Prerequisites
 
@@ -16,10 +16,10 @@
 
 ```bash
 # Install the full agent-forge marketplace via git URL
-gemini skills install github:rahulnakmol/agent-forge
+gemini skills install github:tqnonline/agent-forge
 
 # Or install a specific plugin
-gemini skills install github:rahulnakmol/agent-forge#plugins/writing
+gemini skills install github:tqnonline/agent-forge#plugins/writing
 ```
 
 ### Option B: Via the agent-forge CLI
@@ -53,7 +53,7 @@ agent-forge update            # apply
 
 Native alternative:
 ```bash
-gemini skills update github:rahulnakmol/agent-forge
+gemini skills update github:tqnonline/agent-forge
 ```
 
 ## Removing

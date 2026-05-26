@@ -37,7 +37,7 @@ git push --force-with-lease
 
 ```bash
 # Fork on GitHub, then:
-gh repo fork rahulnakmol/agent-forge --clone --remote
+gh repo fork tqnonline/agent-forge --clone --remote
 cd agent-forge
 git checkout -b <type>/<short-description>
 # type: fix, feat, docs, chore
@@ -149,8 +149,8 @@ add it to `plugins/<name>/THIRD_PARTY_NOTICES.md`.
 
 ## Getting help
 
-- **Questions:** Open a [GitHub Discussion](https://github.com/rahulnakmol/agent-forge/discussions)
-- **Bugs:** Open a [GitHub Issue](https://github.com/rahulnakmol/agent-forge/issues)
+- **Questions:** Open a [GitHub Discussion](https://github.com/tqnonline/agent-forge/discussions)
+- **Bugs:** Open a [GitHub Issue](https://github.com/tqnonline/agent-forge/issues)
 - **Deeper guides:**
   - [Adding a plugin](./docs/contributing/adding-a-plugin.md)
   - [Skill authoring guide](./docs/contributing/skill-authoring-guide.md)

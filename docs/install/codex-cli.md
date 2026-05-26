@@ -2,7 +2,7 @@
 
 > **Agent-installable:** This guide is written so an LLM agent can read it and
 > execute the install commands directly. Paste this URL into your agent:
-> `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/docs/install/codex-cli.md`
+> `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/codex-cli.md`
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@
 
 ```bash
 # Register the agent-forge plugin marketplace
-codex plugin marketplace add rahulnakmol/agent-forge
+codex plugin marketplace add tqnonline/agent-forge
 
 # Install individual plugins
 codex plugin install writing
@@ -72,7 +72,7 @@ codex plugin remove writing
 
 **Plugin not appearing after install:**
 1. Confirm `.codex-plugin/` exists in your working directory
-2. Re-run `codex plugin marketplace add rahulnakmol/agent-forge` and retry install
+2. Re-run `codex plugin marketplace add tqnonline/agent-forge` and retry install
 
 **Skills not invoking:**
 1. Check that `OPENAI_API_KEY` is set in your shell

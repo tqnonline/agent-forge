@@ -32,7 +32,7 @@ def build() -> str:
     plugins = canonical["plugins"]
     out = ["# agent-forge install catalog\n\n"]
     out.append("> Paste this URL into any LLM agent to install:\n")
-    out.append("> `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/docs/install/<tool>.md`\n\n")
+    out.append("> `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/<tool>.md`\n\n")
     out.append("## Install targets (12 at v1.0)\n\n")
     out.append("| Tool | Tier | Install guide |\n")
     out.append("|---|---|---|\n")

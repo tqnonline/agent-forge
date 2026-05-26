@@ -2,7 +2,7 @@
 
 > **Agent-installable:** This guide is written so an LLM agent can read it and
 > execute the install commands directly. Paste this URL into your agent:
-> `https://raw.githubusercontent.com/rahulnakmol/agent-forge/main/docs/install/github-copilot-cli.md`
+> `https://raw.githubusercontent.com/tqnonline/agent-forge/main/docs/install/github-copilot-cli.md`
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@
 
 ```bash
 # Register the agent-forge plugin marketplace
-copilot plugin marketplace add rahulnakmol/agent-forge
+copilot plugin marketplace add tqnonline/agent-forge
 
 # Install individual plugins
 copilot plugin install writing
