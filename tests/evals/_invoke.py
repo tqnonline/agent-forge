@@ -1,4 +1,12 @@
-"""Invoke a skill against Claude Haiku 4.5 and return its output."""
+"""Invoke a skill against Claude Haiku 4.5 and return its output.
+
+`temperature=0` is set so the same (skill_body, user_input) pair produces the
+same output across runs — required for the regression check downstream to
+detect actual skill changes rather than sampling noise. Opus 4.x dropped the
+`temperature` parameter, so we omit it when the invoke model name contains
+"opus"; in that case, baseline runs are inherently non-deterministic and
+should be regenerated whenever a regression is suspected.
+"""
 
 import os
 
@@ -12,10 +20,13 @@ def invoke_skill(skill_body: str, user_input: str, context: str | None = None) -
     user_message = user_input
     if context:
         user_message = f"Context: {context}\n\nInput:\n{user_input}"
-    message = client.messages.create(
-        model=INVOKE_MODEL,
-        max_tokens=2000,
-        system=skill_body,
-        messages=[{"role": "user", "content": user_message}],
-    )
+    kwargs = {
+        "model": INVOKE_MODEL,
+        "max_tokens": 2000,
+        "system": skill_body,
+        "messages": [{"role": "user", "content": user_message}],
+    }
+    if "opus" not in INVOKE_MODEL.lower():
+        kwargs["temperature"] = 0
+    message = client.messages.create(**kwargs)
     return message.content[0].text

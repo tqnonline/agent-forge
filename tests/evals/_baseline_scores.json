@@ -1,324 +1,324 @@
 {
   "msft-arch/accessibility": {
     "aria_live_region": 4.2,
-    "blazor_route_focus": 3.3,
+    "blazor_route_focus": 4.4,
     "custom_modal_focus_trap": 3.3,
-    "power_apps_canvas_a11y": 4.4,
-    "wcag_color_contrast": 3.1
+    "power_apps_canvas_a11y": 4.2,
+    "wcag_color_contrast": 3.6
   },
   "msft-arch/ai-architect": {
-    "content_safety_guardrails": 3.3,
-    "copilot_studio_orchestrator": 3.5,
+    "content_safety_guardrails": 3.0,
+    "copilot_studio_orchestrator": 3.3,
     "model_selection": 3.0,
-    "multi_agent_architecture": 3.5,
-    "rag_architecture": 3.4
+    "multi_agent_architecture": 3.8,
+    "rag_architecture": 3.3
   },
   "msft-arch/artifacts": {
-    "adr_workbook": 3.4,
-    "effort_estimation": 3.8,
-    "full_artifact_suite": 2.4,
+    "adr_workbook": 5.0,
+    "effort_estimation": 4.6,
+    "full_artifact_suite": 2.6,
     "raid_log": 4.8,
     "test_strategy_workbook": 3.8
   },
   "msft-arch/azure-architect": {
-    "event_driven_architecture": 3.4,
-    "hub_spoke_networking": 3.8,
+    "event_driven_architecture": 3.8,
+    "hub_spoke_networking": 4.2,
     "microservices_service_selection": 4.2,
     "waf_validation": 4.6,
-    "web_api_architecture": 4.0
+    "web_api_architecture": 4.8
   },
   "msft-arch/azure-sql-architect": {
-    "always_encrypted_pii": 3.0,
-    "failover_groups": 3.8,
-    "partition_strategy": 3.4,
+    "always_encrypted_pii": 3.4,
+    "failover_groups": 4.2,
+    "partition_strategy": 3.0,
     "query_store_setup": 3.8,
-    "tier_selection": 4.0
+    "tier_selection": 3.8
   },
   "msft-arch/cicd-architect": {
-    "conventional_commits_dependabot": 3.0,
+    "conventional_commits_dependabot": 3.4,
     "github_actions_oidc": 3.8,
-    "gitops_aks": 3.8,
-    "ring_deployment_strategy": 4.0,
+    "gitops_aks": 2.6,
+    "ring_deployment_strategy": 3.8,
     "terraform_pr_workflow": 4.2
   },
   "msft-arch/container-architect": {
     "container_apps_vs_aks": 2.6,
     "container_security": 2.0,
-    "dapr_architecture": 2.4,
-    "gitops_flux_design": 2.6,
-    "waf_validation_containers": 3.8
+    "dapr_architecture": 2.2,
+    "gitops_flux_design": 3.0,
+    "waf_validation_containers": 3.2
   },
   "msft-arch/d365-architect": {
-    "d365_fo_finance_design": 2.8,
-    "d365_security_model": 3.8,
-    "dual_write_integration": 3.8,
+    "d365_fo_finance_design": 3.2,
+    "d365_security_model": 3.4,
+    "dual_write_integration": 4.2,
     "fit_gap_analysis": 3.3,
     "isv_solution_assessment": 3.0
   },
   "msft-arch/data-architect": {
-    "data_governance_purview": 4.0,
-    "duckdb_embedded_analytics": 2.4,
-    "fabric_vs_databricks": 3.8,
+    "data_governance_purview": 3.8,
+    "duckdb_embedded_analytics": 2.6,
+    "fabric_vs_databricks": 3.6,
     "medallion_architecture": 4.6,
-    "power_bi_direct_lake": 3.8
+    "power_bi_direct_lake": 3.5
   },
   "msft-arch/defender-sentinel": {
-    "analytics_rules_design": 2.6,
-    "defender_plan_matrix": 2.2,
+    "analytics_rules_design": 2.2,
+    "defender_plan_matrix": 2.0,
     "sentinel_workspace_topology": 2.6,
     "soar_playbook_design": 2.6,
-    "threat_intelligence_integration": 2.0
+    "threat_intelligence_integration": 2.2
   },
   "msft-arch/discover": {
-    "discovery_output_structure": 2.2,
-    "greenfield_engagement": 2.2,
-    "migration_engagement": 2.0,
-    "modernization_engagement": 1.8,
-    "multi_geo_discovery": 2.2
+    "discovery_output_structure": 2.0,
+    "greenfield_engagement": 1.8,
+    "migration_engagement": 2.4,
+    "modernization_engagement": 2.0,
+    "multi_geo_discovery": 2.6
   },
   "msft-arch/docs": {
     "c4_diagram_quality": 2.8,
-    "hld_generation": 3.5,
-    "live_architecture_diagram": 2.2,
-    "lld_api_contracts": 2.4,
-    "tech_design_spec": 3.8
+    "hld_generation": 3.4,
+    "live_architecture_diagram": 3.0,
+    "lld_api_contracts": 2.6,
+    "tech_design_spec": 3.2
   },
   "msft-arch/dotnet-architect": {
-    "aspire_distributed_orchestration": 3.0,
-    "blazor_hosting_selection": 2.6,
-    "ef_core_optimization": 3.0,
-    "minimal_api_design": 3.4,
+    "aspire_distributed_orchestration": 2.6,
+    "blazor_hosting_selection": 3.4,
+    "ef_core_optimization": 3.4,
+    "minimal_api_design": 3.0,
     "result_type_error_handling": 3.8
   },
   "msft-arch/dotnet-modernization": {
     "ef6_to_efcore_migration": 2.6,
-    "strangler_fig_vs_big_bang": 4.0,
-    "wcf_to_grpc_migration": 2.2,
+    "strangler_fig_vs_big_bang": 4.3,
+    "wcf_to_grpc_migration": 2.6,
     "webforms_to_blazor": 3.4,
-    "windows_container_fallback": 1.8
+    "windows_container_fallback": 1.4
   },
   "msft-arch/finops-architect": {
-    "commitment_vehicle_selection": 2.6,
-    "cost_anomaly_detection": 2.8,
-    "right_sizing_playbook": 2.6,
-    "showback_vs_chargeback": 2.8,
-    "tagging_strategy": 2.4
+    "commitment_vehicle_selection": 2.2,
+    "cost_anomaly_detection": 2.6,
+    "right_sizing_playbook": 2.2,
+    "showback_vs_chargeback": 3.0,
+    "tagging_strategy": 2.2
   },
   "msft-arch/iac-architect": {
     "avm_module_usage": 4.8,
-    "brownfield_import": 3.4,
+    "brownfield_import": 4.2,
     "policy_as_code": 3.4,
-    "remote_state_design": 2.8,
+    "remote_state_design": 2.6,
     "terraform_vs_bicep": 4.8
   },
   "msft-arch/identity-architect": {
-    "conditional_access_baseline": 2.6,
+    "conditional_access_baseline": 3.0,
     "external_id_vs_b2c": 3.4,
     "managed_identity_selection": 2.6,
     "pim_rbac_design": 4.2,
     "workload_identity_federation": 3.0
   },
   "msft-arch/m365-platform": {
-    "adaptive_cards_outlook": 3.8,
+    "adaptive_cards_outlook": 3.4,
     "bundle_size_optimization": 3.0,
-    "graph_connector_search": 3.4,
+    "graph_connector_search": 3.8,
     "spfx_web_part": 3.4,
-    "teams_app_design": 3.0
+    "teams_app_design": 3.8
   },
   "msft-arch/maui-architect": {
-    "blazor_hybrid_decision": 2.6,
+    "blazor_hybrid_decision": 2.4,
     "maui_vs_xamarin": 3.0,
-    "mvvm_community_toolkit": 3.2,
+    "mvvm_community_toolkit": 3.0,
     "offline_first_sync": 3.4,
-    "push_notifications_setup": 3.4
+    "push_notifications_setup": 4.0
   },
   "msft-arch/microsoft-graph": {
     "batch_request_optimization": 3.0,
-    "change_notifications_vs_polling": 4.3,
-    "granular_permissions_sharepoint": 2.6,
+    "change_notifications_vs_polling": 3.5,
+    "granular_permissions_sharepoint": 3.2,
     "permission_model_selection": 2.6,
-    "throttling_retry_strategy": 3.4
+    "throttling_retry_strategy": 3.0
   },
   "msft-arch/observability-architect": {
-    "aks_prometheus_monitoring": 3.4,
+    "aks_prometheus_monitoring": 2.4,
     "distributed_tracing_design": 2.6,
-    "log_analytics_workspace_design": 3.0,
-    "opentelemetry_instrumentation": 2.6,
-    "slo_driven_alerting": 2.2
+    "log_analytics_workspace_design": 3.4,
+    "opentelemetry_instrumentation": 2.8,
+    "slo_driven_alerting": 2.6
   },
   "msft-arch/odin": {
-    "ai_agent_architecture": 2.4,
+    "ai_agent_architecture": 2.8,
     "aws_to_azure_redesign": 3.0,
-    "design_review_microservices": 2.8,
+    "design_review_microservices": 3.6,
     "how_to_build_event_sourcing": 2.6,
-    "simplify_complex_architecture": 2.6
+    "simplify_complex_architecture": 2.8
   },
   "msft-arch/powerplatform-architect": {
-    "alm_pipeline_design": 3.0,
-    "canvas_vs_model_driven": 2.4,
-    "dataverse_security_design": 2.6,
+    "alm_pipeline_design": 3.4,
+    "canvas_vs_model_driven": 2.2,
+    "dataverse_security_design": 2.4,
     "delegation_pattern": 2.6,
-    "dlp_policy_design": 2.6
+    "dlp_policy_design": 3.0
   },
   "msft-arch/requirements": {
-    "fit_gap_classification": 3.0,
-    "functional_requirements_elicitation": 2.0,
+    "fit_gap_classification": 2.6,
+    "functional_requirements_elicitation": 3.3,
     "moscow_prioritization": 2.6,
-    "nfr_targets": 2.0,
-    "requirements_register_output": 3.8
+    "nfr_targets": 2.2,
+    "requirements_register_output": 3.4
   },
   "msft-arch/security-architect": {
-    "defender_plan_selection": 2.4,
+    "defender_plan_selection": 2.2,
     "key_vault_rbac_pattern": 2.6,
-    "owasp_design_time_mapping": 1.8,
-    "private_endpoint_network_security": 2.4,
+    "owasp_design_time_mapping": 2.2,
+    "private_endpoint_network_security": 2.2,
     "supply_chain_sbom": 2.2
   },
   "msft-arch/spec": {
-    "adr_generation": 1.6,
+    "adr_generation": 2.2,
     "c4_diagram_completeness": 2.2,
-    "design_first_spec_generation": 1.4,
-    "functional_programming_business_logic": 1.4,
-    "multi_story_epic_spec": 1.4
+    "design_first_spec_generation": 2.4,
+    "functional_programming_business_logic": 2.2,
+    "multi_story_epic_spec": 2.2
   },
   "msft-arch/sre-architect": {
     "burn_rate_alerting": 2.2,
-    "chaos_engineering_plan": 3.0,
+    "chaos_engineering_plan": 2.6,
     "error_budget_governance": 2.4,
-    "slo_decomposition": 1.8,
-    "toil_reduction_strategy": 2.6
+    "slo_decomposition": 2.2,
+    "toil_reduction_strategy": 2.2
   },
   "msft-arch/stack-select": {
-    "citizen_dev_departmental_app": 2.6,
-    "d365_erp_crm_selection": 2.6,
-    "enterprise_external_api": 2.8,
-    "high_scale_microservices": 3.8,
-    "stack_challenge_validation": 3.6
+    "citizen_dev_departmental_app": 2.4,
+    "d365_erp_crm_selection": 4.2,
+    "enterprise_external_api": 4.6,
+    "high_scale_microservices": 4.0,
+    "stack_challenge_validation": 3.8
   },
   "msft-arch/standards": {
-    "cross_skill_standards_consumption": 3.2,
+    "cross_skill_standards_consumption": 2.0,
     "diagram_standards_reference": 2.6,
-    "finops_accessibility_references": 2.6,
-    "preferred_stack_reference": 3.0,
+    "finops_accessibility_references": 2.8,
+    "preferred_stack_reference": 2.4,
     "security_reference_routing": 2.6
   },
   "msft-arch/threat-model": {
-    "attack_tree_construction": 2.4,
-    "data_breach_blast_radius": 2.0,
-    "incremental_threat_model_update": 3.0,
-    "owasp_asi_ai_agent": 2.4,
-    "stride_a_threat_model": 2.0
+    "attack_tree_construction": 2.0,
+    "data_breach_blast_radius": 2.6,
+    "incremental_threat_model_update": 2.4,
+    "owasp_asi_ai_agent": 3.5,
+    "stride_a_threat_model": 2.4
   },
   "msft-arch/tom-architect": {
-    "ai_augmentation_overlay": 2.4,
-    "finance_tom_design": 2.2,
-    "maturity_assessment": 2.6,
+    "ai_augmentation_overlay": 3.2,
+    "finance_tom_design": 2.4,
+    "maturity_assessment": 2.4,
     "technology_capability_mapping": 2.6,
-    "tom_deliverable_package": 3.0
+    "tom_deliverable_package": 2.4
   },
   "msft-arch/validate": {
     "adversarial_review": 1.8,
     "completeness_audit": 1.8,
-    "consistency_audit": 4.2,
+    "consistency_audit": 3.8,
     "council_of_three_dispatch": 4.2,
-    "validation_report_synthesis": 3.4
+    "validation_report_synthesis": 3.0
   },
   "pm/backlog-ado": {
-    "acceptance_criteria_html": 2.6,
-    "parent_child_row_ordering": 2.6,
-    "safe_field_mapping": 2.8,
-    "summary_artifact_generation": 3.4,
-    "work_item_type_schema": 2.2
+    "acceptance_criteria_html": 2.0,
+    "parent_child_row_ordering": 4.0,
+    "safe_field_mapping": 3.4,
+    "summary_artifact_generation": 2.6,
+    "work_item_type_schema": 2.0
   },
   "pm/backlog-decompose": {
     "acceptance_criteria_requirement": 2.6,
     "platform_handoff_routing": 3.0,
-    "prd_to_hierarchy": 2.4,
-    "seven_work_item_types": 2.6,
-    "technical_stories_extraction": 2.4
+    "prd_to_hierarchy": 1.8,
+    "seven_work_item_types": 3.0,
+    "technical_stories_extraction": 3.8
   },
   "pm/backlog-github": {
-    "duplicate_check_cross_reference": 3.0,
-    "github_issue_creation_order": 4.2,
-    "label_and_issue_type_mapping": 2.6,
-    "sub_issue_hierarchy": 2.0,
-    "verification_and_summary": 3.0
+    "duplicate_check_cross_reference": 1.8,
+    "github_issue_creation_order": 4.0,
+    "label_and_issue_type_mapping": 1.8,
+    "sub_issue_hierarchy": 2.2,
+    "verification_and_summary": 3.2
   },
   "pm/backlog-linear": {
     "linear_context_collection": 2.2,
     "linear_issue_creation_flow": 3.8,
     "linear_label_management": 2.6,
-    "linear_parent_child_linking": 2.0,
-    "linear_priority_mapping": 1.6
+    "linear_parent_child_linking": 2.6,
+    "linear_priority_mapping": 2.2
   },
   "pm/discover": {
     "initiative_classification": 3.0,
-    "mode_detection_consulting": 2.6,
-    "mode_detection_saas": 3.0,
-    "root_cause_analysis": 2.4,
+    "mode_detection_consulting": 3.0,
+    "mode_detection_saas": 2.6,
+    "root_cause_analysis": 2.6,
     "solution_first_pushback": 2.6
   },
   "pm/epic-decompose": {
     "approval_gate": 3.4,
-    "dive_validation": 3.0,
-    "epic_count_governance": 2.6,
-    "mode_b_tom_extraction": 4.2,
-    "persona_validation": 2.6
+    "dive_validation": 3.8,
+    "epic_count_governance": 2.2,
+    "mode_b_tom_extraction": 4.8,
+    "persona_validation": 2.8
   },
   "pm/map": {
-    "current_state_flow_with_pain_points": 2.8,
+    "current_state_flow_with_pain_points": 2.6,
     "diagram_styling_conventions": 2.6,
     "mode_b_handoff_routing": 2.6,
-    "persona_profile_generation": 2.2,
-    "target_state_flow_design": 1.6
+    "persona_profile_generation": 1.4,
+    "target_state_flow_design": 1.4
   },
   "pm/philosophy": {
-    "constitution_review_cadence": 2.6,
+    "constitution_review_cadence": 2.2,
     "eleven_star_cx_philosophy": 1.4,
     "principle_quality_check": 1.4,
-    "prioritization_framework": 1.6,
+    "prioritization_framework": 1.4,
     "research_bets_register": 2.6
   },
   "pm/prd-draft": {
     "invest_user_stories": 1.4,
-    "negative_acceptance_criteria": 2.6,
+    "negative_acceptance_criteria": 2.2,
     "story_persona_enforcement": 2.6,
-    "story_priority_distribution": 3.4,
-    "twelve_section_prd": 1.8
+    "story_priority_distribution": 3.0,
+    "twelve_section_prd": 2.4
   },
   "pm/prd-review": {
     "anchor_feature_identification": 1.4,
     "chesky_principle_application": 1.0,
-    "eleven_star_mapping": 4.8,
-    "seven_dimension_scoring": 1.0,
-    "verdict_and_improvement_suggestions": 3.6
+    "eleven_star_mapping": 4.6,
+    "seven_dimension_scoring": 2.4,
+    "verdict_and_improvement_suggestions": 3.4
   },
   "pm/prd-validate": {
-    "all_checks_coverage": 2.6,
-    "critical_failure_detection": 1.4,
-    "nine_check_validation": 4.6,
-    "read_only_filter_behavior": 2.2,
-    "star_level_check": 3.4
+    "all_checks_coverage": 2.2,
+    "critical_failure_detection": 2.4,
+    "nine_check_validation": 4.4,
+    "read_only_filter_behavior": 2.0,
+    "star_level_check": 1.8
   },
   "pm/tom-architect": {
-    "ai_augmentation_classification": 2.4,
+    "ai_augmentation_classification": 2.6,
     "maturity_gap_driven_priorities": 2.6,
-    "multi_platform_technology_mapping": 3.2,
+    "multi_platform_technology_mapping": 2.4,
     "seven_phase_workflow_compliance": 3.0,
-    "tom_deliverable_package": 3.4
+    "tom_deliverable_package": 2.0
   },
   "prompts/prompt-forge": {
-    "adaptive_depth_light": 1.8,
-    "artifact_voice_humanize": 1.4,
-    "few_shot_technique": 1.8,
-    "hardening_patterns_application": 4.4,
-    "technique_auto_selection": 2.2
+    "adaptive_depth_light": 1.6,
+    "artifact_voice_humanize": 2.2,
+    "few_shot_technique": 2.2,
+    "hardening_patterns_application": 3.4,
+    "technique_auto_selection": 1.8
   },
   "writing/humanize": {
-    "ai_overclaim": 4.4,
+    "ai_overclaim": 4.2,
     "ai_pattern_em_dashes": 3.8,
     "corporate_jargon": 4.2,
-    "passive_voice_excess": 4.4,
-    "throat_clearing_opener": 4.6
+    "passive_voice_excess": 4.6,
+    "throat_clearing_opener": 4.8
   }
 }
