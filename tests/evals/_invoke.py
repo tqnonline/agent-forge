@@ -22,7 +22,7 @@ def invoke_skill(skill_body: str, user_input: str, context: str | None = None) -
         user_message = f"Context: {context}\n\nInput:\n{user_input}"
     kwargs = {
         "model": INVOKE_MODEL,
-        "max_tokens": 2000,
+        "max_tokens": 8000,
         "system": skill_body,
         "messages": [{"role": "user", "content": user_message}],
     }
