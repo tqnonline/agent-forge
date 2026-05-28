@@ -24,7 +24,7 @@ def test_tom_architect_quality(case, update_baselines) -> None:
     skill_body = (
         HERE.parents[3] / "plugins/pm/skills/tom-architect/SKILL.md"
     ).read_text()
-    output = invoke_skill(skill_body, case["input"], case.get("context"))
+    output = invoke_skill(skill_body, case["input"], case.get("context"), skill_path=SKILL_PATH)
     score = score_against_rubric(output, RUBRIC, case)
     if update_baselines:
         update_baseline(SKILL_PATH, case["id"], score)
