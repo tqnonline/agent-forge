@@ -30,4 +30,4 @@ def test_azure_sql_architect_quality(case, update_baselines) -> None:
         update_baseline(SKILL_PATH, case["id"], score)
         return
     baseline = load_baseline(SKILL_PATH, case["id"])
-    assert_no_regression(score, baseline, tolerance=0.3)
+    assert_no_regression(score, baseline)
