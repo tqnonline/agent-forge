@@ -107,18 +107,21 @@ def load_baseline(skill_path: str, case_id: str) -> float | None:
     return data.get(skill_path, {}).get(case_id)
 
 
-def assert_no_regression(score: float, baseline: float | None, tolerance: float = 0.3) -> None:
+def assert_no_regression(score: float, baseline: float | None, tolerance: float = 0.5) -> None:
     """Fail if CI score drops more than `tolerance` below the recorded baseline.
 
-    With multi-sample median scoring in `score_against_rubric` (default N=3),
-    the practical noise floor drops from ~0.5-0.8 per case (single-shot) to
-    ~0.1-0.2 per case (median of 3). A 0.3 tolerance now suffices for catching
-    real regressions without absorbing meaningful drift.
+    The agent-loop invoke path (Sonnet 4.6, multi-turn) introduces invoke-side
+    variance on top of judge variance, so N=3 median on the judge alone is not
+    enough to hit a 0.3 noise floor across the suite. Empirical CI runs on the
+    mixed-routing baseline produce ~12-15/46 false positives at tolerance 0.3.
+    0.5 absorbs that noise while still catching real regressions of 0.5+.
 
-    History: this default was 0.3, then 0.5 to absorb single-shot Sonnet noise,
-    now back to 0.3 because the N=3 median attacks the noise at its source.
-    Bump back to 0.5 if false positives reappear (e.g. after a model snapshot
-    update widens variance).
+    Tightening below 0.5 would require N=3 on the invoke half too (3x cost on
+    the expensive path) or per-route tolerance (more complexity). Single global
+    0.5 is the empirical compromise.
+
+    History: 0.3 → 0.5 (single-shot Sonnet noise) → 0.3 (N=3 median fix) → 0.5
+    (agent-loop invoke variance pushes noise floor back up).
     """
     if baseline is None:
         return
